@@ -1,0 +1,94 @@
+/* HTML */ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h2>Personal Information</h2>
+                <div class="form-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name here" autofocus required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city name here" required>
+
+                    <label for="pincode">Pincode:</label>
+                    <input type="number" id="pincode" name="pincode" placeholder="Enter your pincode here" required>
+
+                    <button type="submit">Submit</button>
+                </div>
+          </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+/* Style.css */
+
+ /* Style the table */
+ table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 4px solid #6f17e1;
+}
+
+/* Style the table headers */
+tr, td {
+    border: 1px solid #460bdb;
+    padding: 25px;
+    text-align: left;
+}
+
+
+ /* Style the form container */
+ .form-container {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 8px; /* Adjust the gap between form elements */
+ }
+
+ h2{
+     color: #6f0def;
+     text-align: center;
+ }
+
+ /* Style the form labels */
+ label {
+     font-weight: bold;
+ }
+
+ /* Style the form input fields */
+ input {
+     width: 100%;
+     padding: 5px;
+     margin: 2px 0;
+     border: 2px solid #6f17e1;
+     border-radius: 4px;
+ }
+
+ /* Center-align the button */
+ button {
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure it's a block element for centering */
+    background-color: #6f17e1; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove the default button border */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    padding: 10px 20px; /* Add padding to the button */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
